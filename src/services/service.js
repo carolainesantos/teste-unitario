@@ -8,6 +8,9 @@ class ServicoExercicio {
     if (num2 === null) {
       throw new Error("Não é possivel somar sem preencher todos os campos");
     }
+    if (num1 === "a" || num2 === "a") {
+      throw new Error("Não é possivel somar com letras(insira apenas numeros)");
+    }
 
     return num1 + num2;
   }
